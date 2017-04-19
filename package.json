@@ -1,0 +1,13 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nmetzger1/bamazon.git",
+  "author": "Nick <numbnick2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^3.0.6",
+    "mysql": "^2.13.0"
+  }
+}
