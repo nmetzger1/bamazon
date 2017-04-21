@@ -105,6 +105,13 @@ function completePurchase(itemNumber, quantity) {
             throw err;
         }
 
+        //Check for results returned
+        if(response.length < 1){
+            console.log("Item number not found.");
+            connection.end();
+            return;
+        }
+
         var actualQuantity = parseInt(response[0].stock_quantity);
 
         if(actualQuantity < quantity){
